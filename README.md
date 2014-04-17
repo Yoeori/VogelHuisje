@@ -1,4 +1,4 @@
 VogelHuisje.
 ========
 
-A javascript cardgame implementation of bridge
+Something to do with school!
