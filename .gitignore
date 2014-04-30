@@ -10,3 +10,6 @@ Thumbs.db
 /nbproject/private/
 /test/
 /config/
+/src/node_modules/
+/src/npm_debug.log
+/src/css/*.css
