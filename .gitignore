@@ -1,4 +1,4 @@
-/src/nbproject/
+/nbproject/
 .DS_Store
 .DS_Store?
 ._*
@@ -7,3 +7,6 @@
 ehthumbs.db
 Thumbs.db
 .xml
+/nbproject/private/
+/test/
+/config/
