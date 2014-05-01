@@ -1,36 +1,37 @@
-var citymap = {};
-citymap['chicago'] = {
-  center: new google.maps.LatLng(52.1497977,5.3984084,17),
-	radius: 10
-};
-var cityCircle;
+var map;
 
-function initialize() {
-  // Create the map.
-  var mapOptions = {
-    zoom: 14,
-    center: new google.maps.LatLng(52.1497977, 5.3984084,17),
-	disableDefaultUI: true
-  };
+var birdCages = [
+	{
+		pos: new google.maps.LatLng(52.1497977,5.3984084,17),
+		radius: 10
+	}
+];
 
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+function initializeMaps() {
+	
+	map = new google.maps.Map($('#map-canvas')[0], {
+		zoom: 14,
+		center: new google.maps.LatLng(52.1497977, 5.3984084,17),
+		disableDefaultUI: true
+	});
 
-  // Construct the circle for each value in citymap.
-  // Note: We scale the population by a factor of 20.
-  for (var city in citymap) {
-    var populationOptions = {
-      strokeColor: '#FF0000',
-      strokeOpacity: 0.8,
-      strokeWeight: 2,
-      fillColor: '#FF0000',
-      fillOpacity: 0.35,
-      map: map,
-      center: citymap[city].center,
-      radius: citymap[city].radius
-    };
-    // Add the circle for this city to the map.
-    cityCircle = new google.maps.Circle(populationOptions);
-  }
+	for(var birdCage in birdCages) {
+		new google.maps.Circle({
+			strokeColor: '#ff2215',
+			strokeOpacity: 1,
+			strokeWeight: 2,
+			fillColor: '#ff2215',
+			fillOpacity: 0.5,
+			map: map,
+			center: birdCages[birdCage].pos,
+			radius: 10 || birdCages[birdCage].radius //Default wifi radius
+		});
+		new google.maps.Marker({
+			position: birdCages[birdCage].pos,
+			map: map,
+			title: 'Een vogelhuisje.'
+		});
+	}
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initializeMaps);

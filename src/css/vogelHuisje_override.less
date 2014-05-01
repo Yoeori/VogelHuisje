@@ -2,6 +2,15 @@
 Styles for site
 */
 
+@font-face {
+  font-family: 'Tikal Sans Ultra';
+  src: ~"url('@{icon-font-path}TikalSansUltra.eot')";
+  src: ~"url('@{icon-font-path}TikalSansUltra.eot?#iefix') format('embedded-opentype')",
+       ~"url('@{icon-font-path}TikalSansUltra.woff') format('woff')",
+       ~"url('@{icon-font-path}TikalSansUltra.ttf') format('truetype')",
+       ~"url('@{icon-font-path}TikalSansUltra.svg#@{icon-font-svg-id}') format('svg')";
+}
+
 @media (max-width: @screen-xs-min) {
 	.dropdown-menu {
 		.divider {
@@ -49,4 +58,18 @@ body, html {
 	height: 3px;
 	background: #FF851B;
 	
+}
+
+.page-header {
+	font-family: 'Tikal Sans Ultra';
+	border: none;
+	margin-bottom: 0;
+}
+
+.navbar-brand {
+	font-family: 'Tikal Sans Ultra';
+	&:hover {
+		color: rgb(255, 179, 174) !important;
+		border-bottom: 2px #FFF solid;
+	}
 }

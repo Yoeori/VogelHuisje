@@ -18,4 +18,13 @@
     "hjs": "~0.0.6",
     "less-middleware": "0.1.15"
   }
+  "author": {
+    "name": "Yoeri Otten",
+    "email": "me@yoeori.nl",
+    "url": "http://yoeori.nl"
+  },
+  "repository" : {
+    "type": "git",
+    "url":  "https://github.com/Yoeori/VogelHuisje.git"
+  }
 }

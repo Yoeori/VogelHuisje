@@ -22,24 +22,34 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Vogel Huisje</a>
+				<a class="navbar-brand" href="/">Vogelhuisje.</a>
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">Hoe het werkt</a></li>
-					<li><a href="#about">Zelf een vogelhuisje maken</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li class="active"><a href="/">Home</a></li>
+					<li><a href="/how">Hoe het werkt</a></li>
+					<li><a href="/create">Zelf een vogelhuisje maken</a></li>
+					<li><a href="/contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
+		<div class="page-header">
+			<h1>Wat?</h1>
+		</div>
 		
+		
+		<div class="page-header">
+			<h1>Waar?</h1>
+		</div>
+		<p>Hier onder vind je een lijst van alle vogelhuisjes die wij kennen,<br />
+			heb jij er zelf één gemaakt en geplant in een bos in de buurt? laat het ons dan weten!</p>
+		<br />
 	</div>
 	<div class="content-divider"></div>
-	<div id="map-canvas" style="height: 50%; width: 100%;"></div>
+	<div id="map-canvas" style="height: 50%; min-height: 350px; width: 100%;"></div>
 	<div class="content-divider"></div>
 </body>
 </html>
