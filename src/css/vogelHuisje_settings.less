@@ -1,43 +1,35 @@
 /*
-Styles for site
+Settings for site
 */
 
 
 // Basics of a navbar
-@navbar-height:                    50px;
-@navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
-@navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
-@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
-@navbar-collapse-max-height:       340px;
+@navbar-height:						50px;
+@navbar-margin-bottom:				@line-height-computed;
+@navbar-border-radius:				@border-radius-base;
+@navbar-padding-horizontal:			floor((@grid-gutter-width / 2));
+@navbar-padding-vertical:			((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height:			340px;
 
-@navbar-default-color:             #777;
-@navbar-default-bg:                #FF4136;
-@navbar-default-border:            darken(@navbar-default-bg, 6.5%);
+@navbar-default-color:				#777;
+@navbar-default-bg:					#FF4136;
+@navbar-default-border:				darken(@navbar-default-bg, 6.5%);
 
 // Navbar links
-@navbar-default-link-color:                #FFF;
-@navbar-default-link-hover-color:          rgba(255,255,255,0.9);
-@navbar-default-link-hover-bg:             transparent;
-@navbar-default-link-active-color:         rgba(255,255,255,0.8);
-@navbar-default-link-active-bg:				@navbar-default-bg;
-@navbar-default-link-disabled-color:       #ccc;
-@navbar-default-link-disabled-bg:          transparent;
+@navbar-default-link-color:			#FFF;
+@navbar-default-link-hover-color:	rgba(255,255,255,0.9);
+@navbar-default-link-hover-bg:		transparent;
+@navbar-default-link-active-color:	rgba(255,255,255,0.8);
+@navbar-default-link-active-bg:		@navbar-default-bg;
+@navbar-default-link-disabled-color:#ccc;
+@navbar-default-link-disabled-bg:	transparent;
 
 // Navbar brand label
-@navbar-default-brand-color:               @navbar-default-link-color;
-@navbar-default-brand-hover-color:         darken(@navbar-default-brand-color, 10%);
-@navbar-default-brand-hover-bg:            transparent;
+@navbar-default-brand-color:			@navbar-default-link-color;
+@navbar-default-brand-hover-color:	darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg:		transparent;
 
 // Navbar toggle
-@navbar-default-toggle-hover-bg:           transparant;
-@navbar-default-toggle-icon-bar-bg:        #FFF;
-@navbar-default-toggle-border-color:       #FFF;
-
-.navbar-default {
-  .navbar-toggle {
-    &:hover {
-	  opacity: 0.8;
-    }
-  }
-}
+@navbar-default-toggle-hover-bg:		transparant;
+@navbar-default-toggle-icon-bar-bg:	#FFF;
+@navbar-default-toggle-border-color:#FFF;

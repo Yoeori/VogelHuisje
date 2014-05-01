@@ -11,5 +11,5 @@ Thumbs.db
 /test/
 /config/
 /src/node_modules/
-/src/npm_debug.log
+src/npm-debug.log
 /src/css/*.css

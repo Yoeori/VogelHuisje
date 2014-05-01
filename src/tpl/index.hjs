@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>VogelHuisje - Elektronica in het park</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
+	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAo00nZfQt2PYLOtCpM20NLUSLGDMU87fQ&sensor=false"></script>
 	<script src="//code.jquery.com/jquery-2.1.0.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -20,37 +22,21 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">Project name</a>
+				<a class="navbar-brand" href="#">Vogel Huisje</a>
 			</div>
 			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li class="divider"></li>
-							<li class="dropdown-header">Nav header</li>
-							<li><a href="#">Separated link</a></li>
-							<li><a href="#">One more separated link</a></li>
-						</ul>
-					</li>
-				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="../navbar/">Default</a></li>
-					<li><a href="../navbar-static-top/">Static top</a></li>
-					<li class="active"><a href="./">Fixed top</a></li>
+					<li class="active"><a href="#">Home</a></li>
+					<li><a href="#about">Hoe het werkt</a></li>
+					<li><a href="#about">Zelf een vogelhuisje maken</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
-		
+		<div id="map-canvas" style="height: 400px;"></div>
 	</div>
 </body>
 </html>

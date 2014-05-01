@@ -22,14 +22,25 @@ app.use("/sml", express.static(path.join(__dirname, "sml")));
 app.use("/fonts", express.static(path.join(__dirname, "fonts")));
 app.use("/js", express.static(path.join(__dirname, "js")));
 
-app.use(require('less-middleware')({ 
-	src: path.join(__dirname, ''), 
-	force: true
-}));
+//Set options for less compiler:
+if (app.get('env') === 'development') {
+	var less_options = {
+		src: path.join(__dirname, ''), 
+		force: true
+		
+	};
+} else {
+	var less_options = {
+		src: path.join(__dirname, ''), 
+		force: false,
+		once: true,
+		compress: true
+	};
+}
+app.use(require('less-middleware')(less_options));
 app.use("/css", express.static(path.join(__dirname, "css")));
 
 app.get("/", function(req, res, next) {
-	//res.status(404).send("Cannot GET /js/"+req.params.name);
 	res.render('index', { });
 });
 
@@ -62,5 +73,5 @@ app.use(function(err, req, res, next) {
 });
 
 var server = app.listen(app.get('port'), function() {
-  console.log('Express server listening on port ' + server.address().port);
+  console.log('Server listening on port ' + server.address().port);
 });
